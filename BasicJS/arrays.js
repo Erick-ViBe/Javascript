@@ -39,8 +39,20 @@ var roots = numbers.map(function(num) {
 });
 //Ahora roots es igual a [1, 2, 3]
 
+var = encontrarFruta = frutas.find(function(fruta){
+    return fruta === "Fresa";
+});
+//.find - Crea un nuevo array con el elemento que tu indicaste, en el caso de que lo haya, sino, no devuelve nada, cuando encuentra el elemento buscado, deja de buscar y  lo retorna 
 
+frutas.forEach(function(fruta){
+    console.log(fruta);
+});
+//Recorre todo ls elementos del array
 
+frutasCortas = frutas.some(function(fruta){
+    return fruta.length <= 5;
+});
+//Devuelve un true o un false de acuerdo a si existe un elemento en el array que cumpla con lo indicado, en este caso devolveria True ya que "fresa" tiene 5 letras
 
 
 
