@@ -53,5 +53,3 @@ frutasCortas = frutas.some(function(fruta){
     return fruta.length <= 5;
 });
 //Devuelve un true o un false de acuerdo a si existe un elemento en el array que cumpla con lo indicado, en este caso devolveria True ya que "fresa" tiene 5 letras
-
-//Este comentario se debe borrar
