@@ -1,0 +1,25 @@
+Toda promesa inicia en estado:
+    -Pending
+
+Si se resuelve exitosamente:
+    -Fulfilled
+
+Si sucede algun error:
+    -Rejected
+
+Para obtener el valor exitoso de la promesa, podemos llamar a la funcion:
+    -.then
+
+Para obtener el valor erroneo de la promesa, podemos llamar a la funcion:
+    -.catch
+
+
+new Promise(function(resolve, reject){
+    ........
+    }).then(valor=>{
+	......
+	Aqui podemos retornar otra promesa, y asi encadenarlas, sucesivamente en acciones asincronas
+    }).catch(err=>{
+	...... 
+    })
+resolve y reject son funciones
