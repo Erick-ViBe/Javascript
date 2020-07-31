@@ -1,0 +1,5 @@
+const: Sera un valor que no cambiara, siempre sera el mismo, es un valor constante
+
+var: Su valor puede cambiar, puede no estar definida y tendria un valor de 'undifined', tambien var expande su alcance a toda la funcion en la que este declarada
+
+let: Su valor puede cambiar, debe estar definido necesariamente, su alcance se limita a donde fue declarado
