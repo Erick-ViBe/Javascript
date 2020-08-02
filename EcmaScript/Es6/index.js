@@ -197,22 +197,3 @@ console.log(genetatorHello.next().value);
 console.log(genetatorHello.next().value);
 console.log(genetatorHello.next().value);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
