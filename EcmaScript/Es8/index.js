@@ -21,7 +21,6 @@ console.log(entries);
 console.log(entries.length);
 
 
-
 //+++++++++++++++++++++++++++
 //Object values
 
@@ -46,16 +45,4 @@ console.log(string.padStart(7,'hi'));
 
 console.log(string.padEnd(12,' -----'));
 //imprime 'hello -----'
-
-
-
-
-
-
-
-
-
-
-
-
 
