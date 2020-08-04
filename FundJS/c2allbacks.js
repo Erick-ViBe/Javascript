@@ -1,35 +1,23 @@
-const API_URL = 'https://swapi.dev/api/'
-const PEOPLE_URL = 'people/:id'
-
-const opts = { crossDomain: true }
-
-function obtenerPersonaje(id){
-    return new Promise((resolve, reject) => {
-	const url = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
-	$
-	    .get(url, opts, function(data){
-		resolve(data)
-	    })
-	    .fail(() => reject(id))
-
-    })
+function sum(num1, num2){
+    return num1 + num2;
 }
 
-function onError(id){
-    console.log(`Sucedio un error al obtener el personaje ${id}`)
+function calc(num1, num2, callback){
+    return callback(num1, num2);
 }
 
-async function obtenerPersonajes(){
-    var ids = [1, 2, 3, 4, 5, 6, 7]
+console.log(calc(6, 2, sum));
 
-    var promesas = ids.map(id => obtenerPersonaje(id))
-
-    try{
-	var personajes = await Promise.all(promesas)
-	console.log(personajes)
-    }catch(id){
-	onError(id)
-    }
+function date(callback){
+    console.log(new Date);
+    setTimeout(function(){
+	let date = new Date;
+	callback(date);
+    }, 3000)
 }
 
-obtenerPersonajes()
+function printDate(dateNow){
+    console.log(dateNow);
+}
+
+date(printDate);
